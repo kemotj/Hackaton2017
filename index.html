@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ratujmy Pszczoły</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .carousel-inner img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+  .carousel-caption h3 {
+  color: #000000;
+  margin: 30px;
+  background-color: #ffffff;
+  border: 0px;
+  opacity: 0.7;
+}
+
+ .col-sm-6 p{
+  font-size: 150%;
+
+ }
+
+  #timer {
+  color: #EE0000;
+  font-weight: bold;
+  font-size: 150%;
+  }
+
+  .person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 0.9;
+}
+
+  .person:hover {
+    border-color: #E1E1E1;
+}
+
+
+/* Add a dark background color with a little bit see-through */ 
+.navbar {
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity:0.9;
+}
+
+/* Add a gray color to all navbar links */
+.navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
+}
+
+/* On hover, the links will turn white */
+.navbar-nav li a:hover {
+    color: #fff !important;
+}
+
+/* The active link */
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color:#29292c !important;
+}
+
+/* Remove border color from the collapsible button */
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+/* Dropdown */
+.open .dropdown-toggle {
+    color: #fff ;
+    background-color: #555 !important;
+}
+
+/* Dropdown links */
+.dropdown-menu li a {
+    color: #000 !important;
+}
+
+/* On hover, the dropdown links will turn red */
+.dropdown-menu li a:hover {
+    background-color: red !important;
+}
+ 
+
+  </style>
+
+</script>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+	<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+
+        <!--  
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+  <a class="navbar-brand" href="#">Logo</a> -->
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#slajd">Strona główna</a></li>
+        <li><a href="#domki">Przygarnij pszczołę</a></li>
+        <li><a href="#lipa">Zasadź lipę</a></li>
+          </ul>
+        </li>
+        <!--<li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div id="slajd" class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="p1_.jpg" alt="Pszczola">
+<div class="carousel-caption">
+        <h3><em>„Jeśli znikną pszczoły, człowiekowi pozostaną jeszcze cztery lata życia” - Albert Einstein </em></h3>
+        <p>fot. image4you (Pixabay, CC0 Public Domain, free for commercial use) </p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="p2_.jpg" alt="Pszczola">
+      <div class="carousel-caption">
+        <h3>Dzięki pracy pszczół warzywa i owoce wydają obfitsze plony</h3>
+        <p> fot. Pezibear (Pixabay, CC0 Public Domain, free for commercial use) </p>
+      </div> 
+    </div>
+
+    <div class="item">
+      <img src="p3_.jpg" alt="Pszczola">
+      <div class="carousel-caption">
+                <h3>Pszczoły zapewniają również więcej paszy dla innych zwierząt</h3>
+        <p> fot. Vijayanarasimha (Pixabay, CC0 Public Domain, free for commercial use) </p>
+      </div> 
+    </div>
+
+      <div class="item">
+      <img src="p4_.jpg" alt="Pszczola">
+      <div class="carousel-caption">
+        <h3>Miód, pyłek, pierzga i propolis to często najskuteczniejsze lekarstwa w leczeniu wielu schorzeń</h3>
+        <p> fot. PollyDot (Pixabay, CC0 Public Domain, free for commercial use) </p>
+      </div> 
+    </div>
+
+
+      <div class="item">
+      <img src="p5_.jpg" alt="Pszczola">
+      <div class="carousel-caption">
+        <h3>Niestety z roku na rok liczebność tych pożytecznych owadów maleje. Szacuje się, że co sekundę ginie w Polsce 105 pszczół. <br>
+          W ciągu czasu, w jakim przeglądasz tę stronę, zginęło ich już:
+<div id="timer" >
+<script>
+var a = 0;
+function startTime() {
+  a=a+105;
+  document.getElementById('timer').innerHTML = a;
+  t = setTimeout(function() {  startTime() }, 1000);}
+startTime();
+</script>
+
+<style>
+.nav-tabs li a {
+    color: #777;
+}
+</style>
+</div>
+
+
+ </h3>
+        <p> fot. PollyDot (Pixabay, CC0 Public Domain, free for commercial use) </p>
+      </div> 
+    </div>
+
+  </div>
+
+
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+<div id="domki" class="container text-center">
+  <h3>Przygarnij pszczołę</h3>
+  <p><em>Zaproś pszczelą rodzinkę do domku na działce, w ogrodzie lub na balkonie</em></p>
+  <br>
+  <div class="row">
+  <div class="col-sm-6">
+          <p><strong>Postaw ul dla pszczoły miodnej</strong></p><br>
+    <a href="#demo" data-toggle="collapse">
+      <img src="u1.jpg" class="img-circle person" >
+    </a>
+    <div id="demo" class="collapse">
+      <p>Do budowy ula możesz wykorzystać niepotrzebne meble lub skrzynki na owoce.</p>
+    </div>
+  </div>
+  <div class="col-sm-6">
+      <p><strong>Zbuduj schronienie dla pszczoły murarki</strong></p><br>
+    <a href="#demo2" data-toggle="collapse">
+      <img src="u2.jpg" class="img-circle person" >
+    </a>
+    <div id="demo2" class="collapse">
+      <p>Wystarczy garść odpowiednio przyciętej i umocowanej trzciny oraz kilka listewek.</p>
+    </div>
+  </div>
+
+</div>
+
+<br>
+  <div class="row">
+
+  <div class="col-sm-6">
+          <p><strong>Otwórz hotel dla owadów</strong></p><br>
+    <a href="#demo3" data-toggle="collapse">
+      <img src="u4.jpg" class="img-circle person" >
+    </a>
+    <div id="demo3" class="collapse">
+      <p>Żeby zbudować podobny hotelik, potrzebujesz kawałki drewna, cegieł i innych pozostających po remontach materiałów budowlanych.</p>
+
+    </div>
+
+  </div>
+
+  <div class="col-sm-6">
+          <p><strong>Postaw domek dla trzmiela</strong></p><br>
+    <a href="#demo4" data-toggle="collapse">
+      <img src="u3.jpg" class="img-circle person" >
+    </a>
+    <div id="demo4" class="collapse">
+      <p>Dla trzmiela możesz zaadoptować wykorzystywany zimą karmnik dla ptaków.</p>
+
+    </div>
+
+  </div>
+
+
+</div>
+
+
+<div class="container text-center" id="lipa">
+  <h3>Zamiast kolejnego iglaka posadź roślinę miododajną<br>
+
+
+</h3>
+  
+
+  <br>
+  <div class="row">
+  <div class="col-sm-4">
+    
+   <p><strong>Lipa</strong></p><br>
+      <img src="d1.jpg" class="img-thumbnail person" >
+
+  </div>
+
+    <div class="col-sm-4">
+    
+<p><strong>Klon</strong></p><br>
+      <img src="d3.jpg" class="img-thumbnail person"  >
+
+  </div>
+
+  <div class="col-sm-4">
+    
+<p><strong>Akacja</strong></p><br>
+      <img src="d2.jpg" class="img-thumbnail person"  >
+
+  </div>
+
+
+
+
+
+</div>
+
+
+
+
+<br>
+
+  <div class="row">
+  <div class="col-sm-4">
+    
+   <p><strong>Wierzba</strong></p><br>
+      <img src="d4.jpg" class="img-thumbnail person"  >
+
+  </div>
+
+
+
+  <div class="col-sm-4">
+    
+<p><strong>Berberys</strong></p><br>
+      <img src="d5.jpg" class="img-thumbnail person"  >
+
+  </div>
+
+    <div class="col-sm-4">
+    
+<p><strong>Czarna porzeczka</strong></p><br>
+      <img src="d6.jpg" class="img-thumbnail person"  >
+
+  </div>
+
+
+
+</div>
+
+
+
+</body>
+</html>
